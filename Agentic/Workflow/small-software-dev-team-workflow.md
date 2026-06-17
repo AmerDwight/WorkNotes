@@ -1,10 +1,10 @@
 請啟動一個workflow：
 用下列角色對workflow中的agent進行定義（各角色採用的模型階級由使用者自行定義）：
-Supervisor 進件主工單並進行 review，將工作切分為有順序的子工單後逐張派工；核可 Planner 的規格並鎖定驗收標準；接收 Reviewer 的彙報；具備自行開立工單的權力；對整份工單的最終交付負有擔保使命。使用高階模型。
-Planner 負責閱讀被指派的子工單與開發準則，提出開發需求、適用的開發準則、注意事項，以及功能測試與驗收標準。使用中階模型。
-Worker 負責依照已鎖定的規格進行任務實作，包含撰寫與執行測試。使用性價比高的開發模型。
-Reviewer 負責驗收與 audit，依據已鎖定的驗收標準進行；驗收不如預期時依根因分流發派重工，並直接對 Supervisor 彙報（Reviewer 的能力位階不應低於 Worker）。使用中階模型。
-三者（含 Supervisor）的工作流程定義：
+- Supervisor 進件主工單並進行 review，將工作切分為有順序的子工單後逐張派工；核可 Planner 的規格並鎖定驗收標準；接收 Reviewer 的彙報；具備自行開立工單的權力；對整份工單的最終交付負有擔保使命。使用高階模型。
+- Planner 負責閱讀被指派的子工單與開發準則，提出開發需求、適用的開發準則、注意事項，以及功能測試與驗收標準。使用中階模型。
+- Worker 負責依照已鎖定的規格進行任務實作，包含撰寫與執行測試。使用性價比高的開發模型。
+- Reviewer 負責驗收與 audit，依據已鎖定的驗收標準進行；驗收不如預期時依根因分流發派重工，並直接對 Supervisor 彙報（Reviewer 的能力位階不應低於 Worker）。使用中階模型。
+角色（含 Supervisor）的工作流程定義：
 ```
 ## Reusable Workflow: Supervisor–Planner–Worker–Reviewer Development Flow
 
